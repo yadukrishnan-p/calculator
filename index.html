@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caculator</title>
+    <link rel="stylesheet" href="/calc.css">
+</head>
+<body>
+
+
+    <div class="container">
+
+        <div class="calculator">
+
+            <input id="output" class="screen" type="text" placeholder="0">
+              <br>
+              <div class="btn">
+                 <button style="background-color: rgb(209, 3, 3); border: none;" type="button" class="button" onclick="removeLast()">CLR</button>
+                 <button style="background-color: rgb(209, 3, 3); border: none;" type="button" class="button" onclick="clearAll()">AC</button>
+                 <button style="background-color: rgb(152, 107, 193); border: none;" type="button" class="button" onclick=" display('%')">%</button>
+                 <button style="background-color: rgb(152, 107, 193); border: none;" type="button" class="button" onclick="display('*') ">X</button>
+
+                 <br>
+
+                 <button type="button" class="button" onclick="display(7) ">7</button>
+                 <button type="button" class="button" onclick="display(8) ">8</button>
+                 <button type="button" class="button" onclick="display(9) ">9</button>
+                 <button style="background-color: rgb(152, 107, 193); border: none;" type="button" class="button" onclick="display('/') ">/</button>
+
+                 <br>
+
+                 <button type="button" class="button" onclick="display(4) ">4</button>
+                 <button type="button" class="button" onclick="display(5) ">5</button>
+                 <button type="button" class="button" onclick="display(6) ">6</button>
+                 <button style="background-color: rgb(152, 107, 193); border: none;" type="button" class="button" onclick="display('-') ">-</button>
+                
+                 <br>
+
+                 <button type="button" class="button" onclick="display(1) ">1</button>
+                 <button type="button" class="button" onclick="display(2) ">2</button>
+                 <button type="button" class="button" onclick="display(3) ">3</button>
+                 <button style="background-color: rgb(152, 107, 193); border: none;" type="button" class="button" onclick="display('+') ">+</button>
+
+                 <br>
+
+                 <button style="background-color: rgb(152, 107, 193); border:none;" type="button" class="button" onclick="display('.') ">.</button>
+                 <button type="button" class="button" onclick="display(0) ">0</button>
+                 <button style="background-color: rgb(240, 96, 0); border: none;" type="button" class="button" onclick="evaluateExp() ">=</button>
+                 <button style="background-color: rgb(152, 107, 193); border: none;" type="button" class="button" onclick="display('00') ">00</button>
+              </div>
+        </div>
+    </div>
+    
+</body>
+<script src="/calc.js"></script>
+</html>
